@@ -1,24 +1,25 @@
 Digital Marketing Website
 
-A responsive and modern Digital Marketing Website built using React.js, Vite, HTML, CSS, JavaScript, and Bootstrap. The website features an interactive user interface, smooth animations, and responsive design for all devices.
+A responsive and modern Digital Marketing Website developed using HTML, CSS, JavaScript, Bootstrap, and React.js. The website includes interactive UI components, smooth animations, and a user-friendly design. It is optimized for different screen sizes to provide a seamless user experience across devices.
 
-Features
+.Features
 Responsive Design
+Interactive User Interface
 Smooth Animations
-Modern UI/UX
 Reusable React Components
-Fast Performance with Vite
-Technologies Used
-React.js
-Vite
+Cross-Device Compatibility
+.Technologies Used
 HTML
 CSS
 JavaScript
 Bootstrap
-Role
+React.js
 
+.Role
 Frontend Developer
 
-Installation
-npm install
-npm run dev
+.Installation
+npm i  react-router-dom
+
+npm dev
+
