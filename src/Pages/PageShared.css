@@ -1,0 +1,142 @@
+
+
+.hero {
+  position: relative;
+  overflow: hidden;
+}
+
+.hero__bg {
+  position: absolute;
+  inset: 0;
+  background-image: url('/images/hero-Copy.jpg');
+  background-size: cover;
+  background-position: center;
+  filter: saturate(1.05);
+}
+
+.hero__bg::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    90deg,
+    rgba(11, 18, 32, 0.92) 10%,
+    rgba(11, 18, 32, 0.55) 50%,
+    rgba(11, 18, 32, 0.80) 90%
+  );
+}
+
+.hero__content {
+  position: relative;
+  padding: 72px 0;
+}
+
+.hero__text {
+  max-width: 720px;
+}
+
+.hero__kicker {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.98rem;
+  color: rgba(255, 255, 255, 0.78);
+  margin: 0;
+  font-weight: 500;
+}
+
+.hero__title {
+  margin: 0.8rem 0 0.5rem;
+  font-size: clamp(2rem, 3.3vw, 3.2rem);
+  line-height: 1.08;
+  letter-spacing: -0.02em;
+}
+
+.hero__subtitle {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.78);
+  font-size: 1.05rem;
+  line-height: 1.6;
+}
+
+.hero__ctaRow {
+  display: flex;
+  gap: 0.9rem;
+  margin-top: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  padding: 0.75rem 1.05rem;
+  border-radius: 999px;
+  font-weight: 600;
+  border: 1px solid transparent;
+  transition: transform 160ms ease, background 160ms ease, border-color 160ms ease;
+}
+
+.btn--primary {
+  background: linear-gradient(135deg, var(--primary), var(--primary-2));
+  box-shadow: 0 12px 26px rgba(79, 70, 229, 0.25);
+  color: rgba(255, 255, 255, 0.98);
+}
+
+.btn--primary:hover {
+  transform: translateY(-2px);
+}
+
+.btn--ghost {
+  background: rgba(255, 255, 255, 0.06);
+  border-color: rgba(255, 255, 255, 0.18);
+  color: rgba(255, 255, 255, 0.90);
+}
+
+.btn--ghost:hover {
+  background: rgba(255, 255, 255, 0.10);
+  transform: translateY(-2px);
+}
+
+.grid {
+  display: grid;
+  gap: 1rem;
+}
+
+.grid--3 {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+@media (max-width: 900px) {
+  .grid--3 {
+    grid-template-columns: 1fr;
+  }
+
+  .hero__content {
+    padding: 52px 0;
+  }
+}
+
+.card {
+  border-radius: var(--radius);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  background: rgba(255, 255, 255, 0.04);
+  padding: 1.2rem;
+  box-shadow: 0 10px 22px rgba(0, 0, 0, 0.20);
+}
+
+.card--soft {
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.card__title {
+  font-weight: 700;
+  margin-bottom: 0.35rem;
+}
+
+.card__text {
+  color: var(--muted);
+  line-height: 1.6;
+}
+
